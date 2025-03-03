@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<bo<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Simple HTML Form</title>
+    </head>
+    <body>
+        <h1>Simple HTML Form</h1>
+                  
+        <form action="second" method="POST">
+            <!-- Text Input -->
+            <label for="text">user name:</label>
+            <input type="text" id="text" name="firstname " placeholder="enter thr nsme" required>
+            <br><br>
+    
+            <!-- Password Input -->
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+            <br><br>
+    
+            <!-- Email Input -->
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="example@domain.com" required>
+            <br><br>
+
+            <label for="phonennumber" id="phone">phonennumber</label>
+            <input type="tel">
+            <br><br>
+
+    
+            <!-- Number Input -->
+            <label for="number">Number:</label>
+            <input type="number" id="number" name="number" min="1" max="10">
+            <br><br>
+    
+            <!-- Date Input -->
+            <label for="date">Date:</label>
+            <input type="date" id="date" name="date">
+            <br><br>
+    
+            <!-- Radio Buttons -->
+            <label>Gender:</label>
+            <input type="radio" id="male" name="gender" value="male">
+            <label for="male">Male</label>
+            <input type="radio" id="female" name="gender" value="female">
+            <label for="female">Female</label>
+            <br><br>
+    
+            <!-- Checkbox -->
+            <label for="subscribe">Subscribe to Newsletter:</label>
+            <input type="checkbox" id="subscribe" name="subscribe">
+            <br><br>
+    
+            <!-- Select Dropdown -->
+            <label for="car">Choose a car:</label>
+            <select id="car" name="car">
+                <option value="volvo">Volvo</option>
+                <option value="saab">Saab</option>
+                <option value="fiat">Fiat</option>
+                <option value="audi">Audi</option>
+            </select>
+            <br><br>
+    
+            <!-- Textarea -->
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="4" cols="50" placeholder="Write your message here..."></textarea>
+            <br><br>
+
+
+            <label for="budget" id="budget">select your budget</label>
+            <input type="range" min="10000" max="100000000">
+            <br><br>
+    
+            <!-- File Input -->
+            <label for="file">Upload a File:</label>
+            <input type="file" id="file" name="file" accept="jpg">
+            <br><br>
+    
+            <!-- Hidden Field -->
+            <input type="hidden" name="access_key" value="gdftgdfg">
+
+
+            
+          
+            <input type="submit" value="Submit">
+            <br><br> 
+            <table border="1px">
+                <tr>
+                    <th rowspan="2">Rowspan Example</th>
+                    <th colspan="2">Colspan Example</th>
+                </tr>
+                <tr>
+                    <td>Column 1</td>
+                    <td>Column 2</td>
+                </tr>
+                <tr>
+                    <td>Data 1</td>
+                    <td rowspan="2">Data 2 (Rowspan)</td>
+                    <td>Data 3</td>
+                </tr>
+                <tr>
+                    <td>Data 4</td>
+                    <td>Data 5</td>
+                </tr>
+            </table>
+
+
+        </form>
+        
+        <form action="https://api.web3forms.com/submit" method="POST">
+
+            <!-- Replace with your Access Key -->
+            <input type="hidden" name="access_key" value="2e2e2eec-cdce-423f-abac-4c9a749fa557">
+        
+            <!-- Form Inputs. Each input must have a name="" attribute -->
+            <input type="text" name="name" required>
+            <input type="email" name="email" required>
+            <textarea name="message" required></textarea>
+        
+            <!-- Honeypot Spam Protection -->
+            <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
+        
+            <!-- Custom Confirmation / Success Page -->
+            <!-- <input type="hidden" name="redirect" value="https://mywebsite.com/thanks.html"> -->
+        
+            <button type="submit">Submit Form</button>
+        
+        </form>
+    
+    </form>
+    </body>
+    </html>
+    
+</body>
+</html>
